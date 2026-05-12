@@ -1,0 +1,35 @@
+.cart-page { padding: 2rem 1.5rem; }
+.cart-page h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 1.5rem; }
+.cart-layout { display: grid; grid-template-columns: 1fr 360px; gap: 1.5rem; align-items: start; }
+.cart-items { display: flex; flex-direction: column; gap: 1rem; }
+.cart-item {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+}
+.cart-item img { width: 100px; height: 100px; object-fit: cover; border-radius: var(--radius); }
+.item-info { display: flex; flex-direction: column; gap: 0.3rem; }
+.item-name { font-weight: 600; color: var(--text); text-decoration: none; }
+.item-name:hover { color: var(--primary); }
+.item-price { font-size: 1.1rem; font-weight: 700; color: var(--text2); }
+.item-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 0.5rem; }
+.quantity-control { display: flex; align-items: center; gap: 0.5rem; border: 1px solid var(--border); border-radius: var(--radius); }
+.quantity-control button { background: none; padding: 0.3rem 0.7rem; font-size: 1.1rem; color: var(--text); }
+.quantity-control button:hover:not(:disabled) { background: var(--bg); }
+.quantity-control span { min-width: 30px; text-align: center; font-weight: 600; }
+.item-total { font-size: 1.2rem; font-weight: 700; }
+.btn-remove { background: none; font-size: 1.2rem; padding: 0.3rem; color: var(--danger); }
+.btn-remove:hover { opacity: 0.7; }
+.cart-summary { position: sticky; top: 80px; }
+.cart-summary h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; }
+.summary-row { display: flex; justify-content: space-between; margin-bottom: 0.6rem; }
+.summary-row.total { font-size: 1.2rem; margin-top: 0.5rem; }
+.free-shipping-note { font-size: 0.85rem; color: var(--secondary); margin: 0.5rem 0; }
+.continue-shopping { display: block; text-align: center; margin-top: 1rem; color: var(--text2); font-size: 0.9rem; }
+@media (max-width: 768px) {
+  .cart-layout { grid-template-columns: 1fr; }
+  .cart-item { grid-template-columns: 80px 1fr; }
+  .item-actions { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; }
+}

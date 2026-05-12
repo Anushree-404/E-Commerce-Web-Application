@@ -1,0 +1,4 @@
+{"_id":"3f4b52e3-69c5-43c4-90a7-5fdb1f945d64","name":"Anu","email":"anuuuuu@gmail.com","password":"$2a$12$zK3y4gKLRgf0Qt5DhbH8C.6vkYDYKbF.Oy3Pen7UUJqed4L/ivSEe","role":"user","createdAt":"2026-05-12T09:46:05.105Z","updatedAt":"2026-05-12T09:46:05.105Z"}
+{"_id":"b6cc9bb6-0133-4fbf-8611-2e54e8e39e0c","name":"John Doe","email":"user@store.com","password":"$2a$12$MT57vt/4aAe1ft75wg1EwOTYF8qdByEC1uoeYwVXBvtsjwFCDjAkC","role":"user","address":{"street":"123 Main St","city":"New York","state":"NY","zip":"10001","country":"US"},"createdAt":"2026-05-12T09:36:32.035Z","updatedAt":"2026-05-12T09:36:32.035Z"}
+{"_id":"db0d0783-23ba-446c-af5d-62ece2dbe1b1","name":"Admin User","email":"admin@store.com","password":"$2a$12$nJBfDQ4bKkPyfH1lXTV9qu.86AJBG36gRLuO6Tgs0NV9bTxxVjt5W","role":"admin","createdAt":"2026-05-12T09:36:32.035Z","updatedAt":"2026-05-12T09:36:32.035Z"}
+{"$$indexCreated":{"fieldName":"email","unique":true,"sparse":false}}
